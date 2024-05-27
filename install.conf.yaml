@@ -13,3 +13,7 @@
 
 - shell:
     - sleep 2
+    -
+      command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
