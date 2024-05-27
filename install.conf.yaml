@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc:
+    ~/.gitconfig:
+
+- create:
+    - ~/Work
+
+- shell:
+    - sleep 2
