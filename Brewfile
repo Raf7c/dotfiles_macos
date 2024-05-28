@@ -1,11 +1,12 @@
-# Taps
 tap "homebrew/bundle"
-
-# Brew (Packages)
+tap "homebrew/core"
 brew "bat"
-
-# Cask (Applications)
+brew "eza"
+brew "git"
+cask "datagrip"
+cask "gitkraken"
 cask "kitty"
+cask "pycharm"
 cask "raycast"
 cask "visual-studio-code"
 vscode "ms-ceintl.vscode-language-pack-fr"
