@@ -6,6 +6,8 @@ brew "bat"
 brew "eza"
 # Distributed revision control system
 brew "git"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Databases and SQL IDE
 cask "datagrip"
 # Git client focusing on productivity
