@@ -17,6 +17,7 @@ alias ls='eza -lahF --git'
 alias exa='eza -lahF --git'
 alias bbd='brew bundle dump --force --describe'
 alias cat='bat'
+alias trail='<<<${(F)path}'
 
 # Customize Prompt(s)
 
