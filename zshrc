@@ -1,4 +1,4 @@
-echo "Hello R.A.F"
+echo 'Hello from .zshrc'
 
 
 # Set Variables
@@ -15,6 +15,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 #alias ls='ls -lAFh'
 alias ls='eza -lahF --git'
 alias exa='eza -lahF --git'
+alias bbd='brew bundle dump --force --describe'
+alias cat='bat'
 
 # Customize Prompt(s)
 
