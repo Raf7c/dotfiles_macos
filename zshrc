@@ -6,13 +6,13 @@ echo 'Hello from .zshrc'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export PATH=/opt/homebrew/bin:$PATH
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export NULLCMD=bat
 
 
 # Change ZSH Options
 
 
 # Create Aliases
-#alias ls='ls -lAFh'
 alias ls='eza -lahF --git'
 alias exa='eza -lahF --git'
 alias bbd='brew bundle dump --force --describe'
