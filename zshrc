@@ -14,7 +14,7 @@ export NULLCMD=bat
 
 # Create Aliases
 alias ls='eza -lahF --git'
-alias exa='eza -lahF --git'
+alias eza='eza -lahF --git'
 alias bbd='brew bundle dump --force --describe'
 alias cat='bat'
 alias trail='<<<${(F)path}'
@@ -31,3 +31,6 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 
 # ...and Other Surprises
+
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
