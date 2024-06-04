@@ -18,6 +18,8 @@ brew "starship"
 brew "zsh"
 # Databases and SQL IDE
 cask "datagrip"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
 # Git client focusing on productivity
 cask "gitkraken"
 # GPU-based terminal emulator
