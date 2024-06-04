@@ -34,3 +34,6 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# PROMPT
+eval "$(starship init zsh)"
