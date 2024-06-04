@@ -8,6 +8,7 @@
     ~/.zshrc:
     ~/.zshenv:
     ~/.gitconfig:
+    ~/.tool-versions:
     ~/.config/bat:
         create: true
         path: config/bat
