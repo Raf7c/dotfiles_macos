@@ -16,6 +16,10 @@ brew "git"
 brew "starship"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Databases and SQL IDE
 cask "datagrip"
 # Developer targeted fonts with a high number of glyphs

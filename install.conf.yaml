@@ -26,3 +26,6 @@
     - command: ./setup_zsh.zsh
       stdout: true
       stderr: true
+
+- link:
+    ~/fzf-git.sh:
