@@ -1,5 +1,13 @@
 echo 'Hello from .zshrc'
 
+#export ZSH="$HOME/.oh-my-zsh"
+
+#ZSH_THEME="robbyrussell"
+
+
+#plugins=(git)
+
+#source $ZSH/oh-my-zsh.sh
 
 # Set Variables
 # Syntax highlighting for man pages using bat
