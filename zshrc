@@ -26,6 +26,7 @@ export TERMINAL="kitty"
 export BROWSER="arc"
 export EDITOR=nvim
 export NVIM_CONFIG="$HOME/.config/nvim/init.lua"
+export BAT_THEME=catppuccim_mocha.conf
 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
