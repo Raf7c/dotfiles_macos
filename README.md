@@ -53,7 +53,9 @@ These are all my dotfiles for customizing my system and configuring my developme
 <details>
 <summary><b>Neovim </b></summary>
 
-- []()
+- https://github.com/catppuccin/nvim
+- https://github.com/numToStr/FTerm.nvim
+- 
 
 </details>
 </dive>
