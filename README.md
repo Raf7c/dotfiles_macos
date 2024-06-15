@@ -55,7 +55,11 @@ These are all my dotfiles for customizing my system and configuring my developme
 
 - https://github.com/catppuccin/nvim
 - https://github.com/numToStr/FTerm.nvim
-- 
+- https://github.com/nvim-lualine/lualine.nvim
+- https://github.com/nvim-neo-tree
+- https://github.com/folke/which-key.nvim
+- https://github.com/kdheepak/lazygit.nvim
+
 
 </details>
 </dive>
