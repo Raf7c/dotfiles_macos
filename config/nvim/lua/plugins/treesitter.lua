@@ -16,6 +16,7 @@ return {
           "css",
           "html",
           "rust",
+          "go",
           "jsdoc",
           "json",
           "markdown",
@@ -25,6 +26,7 @@ return {
           "yaml",
           "tsx",
           "php",
+          
       },
       highlight = {
         enable = true,
