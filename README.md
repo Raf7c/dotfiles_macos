@@ -51,6 +51,12 @@ These are all my dotfiles for customizing my system and configuring my developme
 </details>
 
 <details>
+<summary><b>Interpreter version manager </b></summary>
+I'm using ASDF to 
+
+</details>
+
+<details>
 <summary><b>Neovim </b></summary>
 
 - https://github.com/catppuccin/nvim
@@ -59,6 +65,11 @@ These are all my dotfiles for customizing my system and configuring my developme
 - https://github.com/nvim-neo-tree
 - https://github.com/folke/which-key.nvim
 - https://github.com/kdheepak/lazygit.nvim
+- https://github.com/nvim-neo-tree/neo-tree.nvim
+- https://github.com/nvim-treesitter/
+- https://github.com/nvim-treesitter/nvim-treesitter
+- https://github.com/williamboman/mason.nvim
+- https://github.com/hrsh7th/nvim-cmp
 
 
 </details>
