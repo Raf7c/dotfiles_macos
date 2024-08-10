@@ -10,4 +10,4 @@ return {
       { "<leader>f/", "<cmd>Telescope live_grep<cr>", desc = "Grep" },
     },
     config = true,
-  }
+}
