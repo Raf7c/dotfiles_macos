@@ -16,12 +16,13 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup {
   spec = {
     { import = "plugins" },
-    { import = "plugins.ui"},
+    { import = "plugins.ui" },
     { import = "pde" },
+
   },
   defaults = { lazy = true, version = nil },
   install = { missing = true, colorscheme = { "catppuccin", "gruvbox" } },
-  --checker = { enabled = true },
+  checker = { enabled = true },
   performance = {
     cache = {
       enabled = true,
@@ -31,7 +32,6 @@ require("lazy").setup {
         "gzip",
         "matchit",
         "matchparen",
-        "netrwPlugin",
         "tarPlugin",
         "tohtml",
         "tutor",
@@ -40,4 +40,3 @@ require("lazy").setup {
     },
   },
 }
-vim.keymap.set("n", "<leader>z", "<cmd>:Lazy<cr>", { desc = "Plugin Manager" })

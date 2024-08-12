@@ -1,8 +1,11 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	dependencies = {
-		{ "windwp/nvim-ts-autotag" },
+		"windwp/nvim-ts-autotag",
+		"nvim-treesitter/nvim-treesitter-textobjects",
+      	"JoosepAlviste/nvim-ts-context-commentstring",
 	},
+	cmd = "Treesitter",
 	main = "nvim-treesitter.configs",
 	opts = {
 		auto_install = true,
@@ -35,9 +38,6 @@ return {
 			enable = true,
 		},
 		indent = {
-			enable = true,
-		},
-		matchup = {
 			enable = true,
 		},
 	},

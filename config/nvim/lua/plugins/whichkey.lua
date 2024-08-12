@@ -1,10 +1,11 @@
 return {
     "folke/which-key.nvim",
-    dependencies = {
-      "mrjones2014/legendary.nvim",
-    },
     event = "VeryLazy",
+    cmd = "Whichkey", 
+    opts_extend = { "spec" },
     opts = {
+      defaults = {
+      },
       setup = {
         show_help = true,
         plugins = { spelling = true },
@@ -24,29 +25,32 @@ return {
           align = "left", -- align columns left, center or right
         },
       },
-      defaults = {
-        prefix = "<leader>",
-        mode = { "n", "v" },
-        w = { "<cmd>update!<CR>", "Save" },
-        q = { name = "Quit/Session",
-          q = { "<cmd>q!<CR>", "Quit" },
-          t = { "<cmd>tabclose<cr>", "Close Tab" },
-        },
-        d = { name = "+Debug" },
-        f = { name = "+File" },
-        g = { name = "+Git" },
-        t = { name = "+Test", N = { name = "+Neotest" }, o = { "+Overseer" } },
-        z = { name = "+System" }, 
-
-        l = {
-          name = "+Language",
-         --g = { name = "Annotation" },
+      spec = {
+        {
+          mode = { "n", "v" },
+          {"<leader>q" , group = "+Quit/Session" },
+          {"<leader>qq" , "<cmd>q<cr>", desc = "Quit" },
+          {"<leader>w" , cmd = "<cmd>update!<cr>", desc = "Save" },
+          { "<leader><tab>", group = "tabs" },
+          { "<leader>c", group = "code" },
+          { "<leader>q", group = "quit/session" },
+          { "<leader>u", group = "ui", icon = { icon = "󰙵 ", color = "cyan" } },
+          {
+            "<leader>b",
+            group = "buffer",
+            expand = function()
+              return require("which-key.extras").expand.buf()
+            end,
+          },
         },
       },
     },
     config = function(_, opts)
-      local wk = require "which-key"
-      wk.setup(opts.setup)
-      wk.register(opts.defaults)
+      local wk = require("which-key")
+      wk.setup(opts)
+      if not vim.tbl_isempty(opts.defaults) then
+        LazyVim.warn("which-key: opts.defaults is deprecated. Please use opts.spec instead.")
+        wk.register(opts.defaults)
+      end
     end,
 }

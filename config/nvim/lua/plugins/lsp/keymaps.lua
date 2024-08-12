@@ -18,6 +18,8 @@ function M.on_attach(client, buffer)
   self:map("[e", M.diagnostic_goto(false, "ERROR"), { desc = "Prev Error" })
   self:map("]w", M.diagnostic_goto(true, "WARNING"), { desc = "Next Warning" })
   self:map("[w", M.diagnostic_goto(false, "WARNING"), { desc = "Prev Warning" })
+
+
   self:map("<leader>la", vim.lsp.buf.code_action, { desc = "Code Action", mode = { "n", "v" }, has = "codeAction" })
 
   local format = require("plugins.lsp.format").format

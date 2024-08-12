@@ -1,7 +1,9 @@
 return {
     {
+
         "hrsh7th/nvim-cmp",
         event = "InsertEnter",
+        cmd = "Completion",
         dependencies = {
           "hrsh7th/cmp-nvim-lsp",
           "saadparwaiz1/cmp_luasnip",
