@@ -30,8 +30,9 @@ return {
           mode = { "n", "v" },
           {"<leader>q" , group = "+Quit/Session" },
           {"<leader>qq" , "<cmd>q<cr>", desc = "Quit" },
-          {"<leader>w" , cmd = "<cmd>update!<cr>", desc = "Save" },
-          { "<leader><tab>", group = "tabs" },
+          --{ "<leader>w", group = "windos" },
+          { "<leader>wt", group = "tabs" },
+          {"<leader>ww" , cmd = "<cmd>update!<cr>", desc = "Save" },
           { "<leader>c", group = "code" },
           { "<leader>q", group = "quit/session" },
           { "<leader>u", group = "ui", icon = { icon = "󰙵 ", color = "cyan" } },
@@ -40,6 +41,14 @@ return {
             group = "buffer",
             expand = function()
               return require("which-key.extras").expand.buf()
+            end,
+          },
+          {
+            "<leader>w",
+            group = "windows",
+            proxy = "<c-w>",
+            expand = function()
+              return require("which-key.extras").expand.win()
             end,
           },
         },
