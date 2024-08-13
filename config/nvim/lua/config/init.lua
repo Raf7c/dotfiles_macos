@@ -1,0 +1,5 @@
+return {
+    pde = {
+        lua = true,
+    },
+}
