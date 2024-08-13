@@ -3,6 +3,7 @@ return {
       "neovim/nvim-lspconfig",
       event = { "BufReadPre", "BufNewFile" },
       dependencies = {
+        { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
         { "j-hui/fidget.nvim", config = true },
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
@@ -44,6 +45,16 @@ return {
           ensure_installed()
         end
       end,
+    },
+    {
+      "utilyre/barbecue.nvim",
+      event = "VeryLazy",
+      dependencies = {
+        "neovim/nvim-lspconfig",
+        "SmiteshP/nvim-navic",
+        "nvim-tree/nvim-web-devicons",
+      },
+      config = true,
     },
     {
       "jose-elias-alvarez/null-ls.nvim",

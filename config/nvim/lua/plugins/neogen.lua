@@ -39,7 +39,7 @@ return {
     },
     --stylua: ignore
     keys = {
-        { "<leader>l", function() end, mode = {"n", "x"}, desc = "+Lsp" },
+      { "<leader>l", function() end, mode = {"n", "x"}, desc = "+Lsp" },
       { "<leader>lg", function() end, mode = {"n", "x"}, desc = "+Neogen" },
       { "<leader>lgd", function() require("neogen").generate() end, desc = "Annotation", },
       { "<leader>lgc", function() require("neogen").generate { type = "class" } end, desc = "Class", },
