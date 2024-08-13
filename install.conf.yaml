@@ -17,16 +17,19 @@
     ~/.config/kitty:
         create: true
         path: config/kitty
+    ~/.config/nvim:
+        create: true
+        path: config/nvim
 
 - create:
     - ~/Work
 
 - shell:
     - sleep 2
-    - command: ./setup_homebrew.zsh
+    - command: ./scripts/setup_homebrew.zsh
       stdout: true
       stderr: true
-    - command: ./setup_zsh.zsh
+    - command: ./scripts/setup_zsh.zsh
       stdout: true
       stderr: true
 
